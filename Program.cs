@@ -6,9 +6,23 @@ namespace Ovning1_4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string userInput = "";
+            double cel;
+            double far;
+           
+            Console.WriteLine("Mata in grader i Celsius: ");
+
+            userInput = Console.ReadLine();
+
+            cel = Convert.ToDouble(userInput);
+
+            far = (cel * 1.8) + 32;
+
+            Console.WriteLine("Det blir " + far + " grader Farenheit");
 
 
+
+            Console.ReadLine();
         }
     }
 }
